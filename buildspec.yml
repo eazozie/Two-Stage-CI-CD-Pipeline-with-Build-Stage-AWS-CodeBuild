@@ -1,0 +1,29 @@
+version: 0.2
+
+
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.9  #installing a python versio 3.9 on the environment
+    commands:
+      
+   
+  pre_build:
+    commands:
+      - echo == CHECKING THE VERSION OF PYTHON INSTALLED
+      - python3 -- version
+      - echo == CHECKING IF AWS CLI IS INSTALLED
+      - aws -- version
+  build:
+      - echo == RUNNING MY PYTHON APP == 
+      - python3 my_app.py
+    
+  post_build:
+    commands:
+      - echo == AWS CODEBUILD COMPLETED ==
+      - echo AWS CODEBUILD COMPLETED AT 'date'...
+
+artifacts:
+  files:
+    - '**/*'  # This command will add every file and zip it
