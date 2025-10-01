@@ -3,7 +3,7 @@
 # A Two-Stage CI/CD Pipeline Setup with a build stage - AWS CodeBuild
 
 
-##Project Details:
+## Project Details:
 
 -	I will be setting up a two-stage CI/CD pipeline using CodePipeline with a build stage to stimulate an application build - AWS CodeBuild 
 -	I will be installing Python 3.9
