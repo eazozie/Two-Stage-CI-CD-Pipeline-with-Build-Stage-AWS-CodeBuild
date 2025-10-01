@@ -1,11 +1,10 @@
 version: 0.2
 
 
-
 phases:
   install:
     runtime-versions:
-      python: 3.9  #installing a python versio 3.9 on the environment
+    python: 3.9  #installing a python versio 3.9 on the environment
     commands:
       
    
@@ -15,6 +14,7 @@ phases:
       - python3 -- version
       - echo == CHECKING IF AWS CLI IS INSTALLED
       - aws -- version
+  
   build:
       - echo == RUNNING MY PYTHON APP == 
       - python3 my_app.py
